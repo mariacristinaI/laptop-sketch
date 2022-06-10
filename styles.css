@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  background: #a4a4a6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a4a4a6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a4a4a6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+  
+.container {
+    width: 680px;
+    margin: 0px auto;
+    position: relative;
+    transform: scale(0.6);
+}
+
+.laptop {
+    background: #3a3a3a;
+    border: 12px solid #303136;
+    border-radius: 10px 10px 0 0;
+    height: 60%;
+    position: absolute;
+    right: 25%;
+    top: 150px;
+    width: 50%;
+  }
+
+  .laptop:before{
+    background: #a5adbd;
+    border-radius: 7px;
+    content: "";
+    height: 7px;
+    left: 50%;
+    margin: -3px 0 0 -3px;
+    position: absolute;
+    top: -6px;
+    width: 7px;
+   }
+  
+  .laptop > div {
+    position: absolute; 
+  }
+  
+  .laptop > .content {
+    height: 100%;
+    left: 0;
+    margin: auto;
+    width: 100%;
+  }
+
+  .content {
+    height: 240px;
+    left: 50%;
+    margin-left: -209px;
+    overflow: hidden;
+    width: 420px;
+  }
+  
+  .content:before {
+    background: linear-gradient(to bottom, rgba(255, 231, 37, 0.41) 0%,rgba(255,255,255,0) 100%);
+    content: "";
+    height: 300px;
+    right: -90px;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 200px;
+    z-index: 5;
+  }
+  
+  .btm {
+    background: #25262b;
+    border-radius: 0 0 20px 20px;
+    bottom: -48px;
+    height: 10%;
+    left: 5%;
+    margin-left: -148px;
+    width: 130%;
+    z-index: 1;
+  }
+  
+  .btm:before {
+    background: #3b3d41;
+    border-radius: 0 0 5px 5px;
+    content: "";
+    height: 40%;
+    left: 45%;
+    margin-left: -21px;
+    position: absolute;
+    top: 0;
+    width: 14%;
+  }
+   
+  .shadow {
+    background: radial-gradient(ellipse at center, rgb(45, 51, 48) 0%,rgba(122, 127, 124, 0.708) 53%,rgba(196, 199, 194, 0.508) 55%,rgba(46,204,113,0) 55%,rgba(46,204,113,0) 100%);
+    bottom: -20px;
+    height: 15px;
+    left: 50%;
+    margin-left: -175px;
+    position: absolute;
+    width: 350px;
+    z-index: -1;
+}
+  
+  .laptop .shadow {
+    bottom: -60px;
+    margin-left: -900px;
+    width: 1800px;
+  }
+
+@media (max-width:1000px) {
+    .btm {
+        height: 8%;
+        left: 20%;
+        width: 150%;
+    }
+}
