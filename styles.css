@@ -64,8 +64,11 @@ body {
     right: -90px;
     position: absolute;
     transform: rotate(45deg);
-    width: 200px;
     z-index: 5;
+  }
+
+  .content:before, img {
+    width: 100%;
   }
   
   .btm {
@@ -114,4 +117,17 @@ body {
         left: 20%;
         width: 150%;
     }
+    img {
+      height: 100%;
+    }
+}
+@media (max-width:600px) {
+  .btm {
+    bottom: -28px;
+    left: initial;
+    margin: 0 -50px;
+  }
+  img {
+    width:initial;
+  }
 }
